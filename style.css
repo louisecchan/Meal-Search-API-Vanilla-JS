@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@font-face {
+  font-family: "FreightBig";
+  src: url("./assets/freight-big-medium.otf");
+}
+
+@font-face {
+  font-family: "SAA Series FD";
+  src: url("./assets/saa-series-fd.woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ultramarine: #1400a2;
+  --ultramarine-dark: #100082;
+  --peru: #c48544;
+  --appleblossom: #b05045;
+  --cherokee: #f5c788;
+  --eden: #286c5c;
+}
+
+body {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  font-family: "Libre Baskerville", serif;
+}
+
+blockquote {
+  font-size: 0.875rem;
+  font-family: "SAA Series FD";
+  font-weight: 100;
+  letter-spacing: 0.03rem;
+  color: var(--peru);
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.arrow:hover {
+  padding-left: 1rem;
+  -webkit-transition: transform 0.8s ease-out;
+  -moz-transition: transform 0.8s ease-out;
+  -ms-transition: transform 0.8s ease-out;
+  -o-transition: transform 0.8s ease-out;
+  transition: transform 0.8s ease-out;
+  -webkit-transform: translateX(0.625rem);
+  -moz-transform: translateX(0.625rem);
+  -ms-transform: translateX(0.625rem);
+  -o-transform: translateX(0.625rem);
+  transform: translateX(0.625rem);
+}
+
+/*  */
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  outline: 0;
+  font-size: 1rem;
+}
+
+.text {
+  opacity: 0.8;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: "FreightBig";
+  color: var(--appleblossom);
+  margin-bottom: 1rem;
+}
+
+/*  */
+.container {
+  min-height: 100vh;
+}
+
+.meal-wrapper {
+  max-width: 80rem;
+  margin: 0 auto;
+  background: #fff;
+  text-align: center;
+}
+
+.meal-search {
+  margin: 3rem 0;
+}
+
+.meal-search cite {
+  font-size: 1rem;
+}
+.meal-search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-control,
+.search-btn {
+  margin: 3rem 3rem 3rem 3rem;
+  width: 100%;
+  border: 0px;
+  border-bottom: 0.063rem solid var(--ultramarine);
+  color: var(--ultramarine);
+}
+
+.search-control {
+  font-family: "SAA Series FD";
+  letter-spacing: 0.069rem;
+  font-size: 0.75rem;
+  outline: 0;
+  min-width: 12.5rem;
+  -webkit-transition: border-color 0.15s ease;
+  -o-transition: border-color 0.15s ease;
+  transition: border-color 0.15s ease;
+  border-top-left-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+  background-image: url(./assets/d-search.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 0.625rem;
+}
+
+.search-control::placeholder {
+  color: var(--ultramarine);
+  font-family: "SAA Series FD";
+  letter-spacing: 0.069rem;
+  font-size: 0.75rem;
+  text-align: left;
+  opacity: 0.8;
+}
+
+.search-control:hover {
+  border-bottom: 0.063rem solid var(--ultramarine-dark);
+  color: var(--ultramarine-dark);
+}
+
+.search-control:focus {
+  background-size: 0px;
+}
+
+.search-btn {
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 1rem;
+  color: var(--ultramarine);
+  background-color: #fff;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.search-btn:hover {
+  color: #fff;
+}
+
+.meal-result {
+  margin-top: 4rem;
+}
+
+#meal {
+  margin: 3.5rem 0;
+}
+.meal-item {
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.meal-img img {
+  width: 100%;
+  display: block;
+  padding: 1.5rem;
+}
+
+.meal-img img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.1));
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.1));
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+}
+
+.meal-name {
+  padding: 1.5rem 0.5rem;
+}
+
+.meal-name h3 {
+  font-size: 1.4rem;
+  color: peru;
+}
+
+.recipe-btn {
+  text-decoration: none;
+  color: var(--ultramarine);
+  text-transform: uppercase;
+  font-family: "SAA Series FD";
+  letter-spacing: 0.069rem;
+  font-size: 0.75rem;
+  padding: 0.75rem 0;
+  display: block;
+  width: 10.938rem;
+  margin: 1rem auto;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.recipe-btn:hover {
+  text-decoration: none;
+}
+
+/* meal details */
+.meal-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  color: #fff;
+  background: var(--cherokee);
+  border-radius: 0rem;
+  -webkit-border-radius: 0rem;
+  -moz-border-radius: 0rem;
+  -ms-border-radius: 0rem;
+  -o-border-radius: 0rem;
+  width: 90%;
+  height: 90%;
+  overflow-y: scroll;
+  display: none;
+  padding: 2rem 0;
+}
+
+.meal-details::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+.meal-details::-webkit-scrollbar-thumb {
+  background: #f0f0f0;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+/* js related */
+.showRecipe {
+  display: block;
+}
+
+.meal-details-content {
+  margin: 2rem;
+}
+
+.meal-details-content p:not(.recipe-category) {
+  padding: 1rem 0;
+}
+
+.recipe-close-btn {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 1rem;
+  color: var(--eden);
+  background: var(--cherokee);
+  border: none;
+  width: 2.188rem;
+  height: 2.188rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.recipe-title {
+  letter-spacing: 0.063rem;
+  padding-bottom: 1rem;
+  color: var(--eden);
+  text-transform: uppercase;
+}
+
+.recipe-category {
+  background: #fff;
+  font-weight: 600;
+  color: var(--appleblossom);
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+}
+
+.recipe-category {
+  background: #fff;
+  font-weight: 600;
+  color: var(--appleblossom);
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+}
+
+.recipe-instruct {
+  font-family: "SAA Series FD";
+  letter-spacing: 0.03rem;
+  color: var(--eden);
+  padding-top: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.recipe-link {
+  margin: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "SAA Series FD";
+  letter-spacing: 0.069rem;
+}
+
+.recipe-link a {
+  color: var(--appleblossom);
+  font-size: 1.2rem;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.recipe-link a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/*  */
+.notFound {
+  grid-template-columns: 1fr !important;
+  color: var(--ultramarine);
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+/* Media Queries */
+@media screen and (min-width: 600px) {
+  .meal-search-box {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #meal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .meal-item {
+    margin: 0;
+  }
+  .meal-details {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #meal {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
