@@ -16,11 +16,44 @@
       href="bootstrap.min.css"
       media="all"
     />
+    <script>
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 10;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+    </script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="meal-wrapper">
+    <section class="header">
+      <img src="./assets/header.jpg" alt="" />
+      <div class="scroll-btn">
+        <a href="#info-slider">
+          <figure>
+            <img
+              src="./assets/arrow-bottom.svg"
+              alt="Down arrow"
+              width="30"
+              height="42"
+            />
+          </figure>
+        </a>
+      </div>
+    </section>
+    <div class="container" id="info-slider">
+      <div class="meal-wrapper reveal">
         <div class="meal-search">
           <h2 class="title">Search Recipes For Your Ingredients</h2>
           <blockquote>
