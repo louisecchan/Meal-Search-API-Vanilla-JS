@@ -475,7 +475,7 @@ blockquote {
 
 @media screen and (max-width: 414px) {
   .header {
-    background-image: url('./assets/header-2.png') !important;
+    background-image: url('./assets/header-2.jpg') !important;
     background-size: 390px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
