@@ -38,7 +38,7 @@ function getMealList() {
                             <img src = "${meal.strMealThumb}" alt = "food">
                         </div>
                         <div class = "meal-name">
-                          <a href = "#" class = "recipe-btn">Get Recipe <span class="arrow"> → </span></a>
+                          <a href = "#" class = "recipe-btn">Get Recipe <span class="go-arrow"> → </span></a>
                           <h3>${meal.strMeal}</h3>                      
                         </div>
                     </div>
