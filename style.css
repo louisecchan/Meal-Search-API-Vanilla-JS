@@ -41,10 +41,18 @@ body {
   height: 100vh;
 }
 
+
+
 img {
   margin-top: 5%;
   margin-left: 15%;
   width: 70vw;
+}
+
+.down-arrow {
+  width: 1.8rem;
+  height: 2.8rem;
+  margin-left: 495px;
 }
 
 .scroll-btn {
@@ -431,6 +439,30 @@ blockquote {
 }
 
 /* Media Queries */
+@media screen and (max-width: 820px) {
+  .header-img {
+    margin-top: 70%;
+    margin-left: 5%;
+    width: 90vw;
+  }
+
+  .down-arrow {
+    width: 0.9rem;
+    height: 1.4rem;
+    margin-top: -16rem;
+    margin-left: 8rem;
+  }
+
+  .title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+}
+
+
 @media screen and (min-width: 600px) {
   .meal-search-box {
     width: 540px;
