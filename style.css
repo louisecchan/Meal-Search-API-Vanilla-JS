@@ -155,6 +155,7 @@ blockquote {
 .meal-search-box {
   display: flex;
   align-items: center;
+  margin-top: 0.5rem;
 }
 
 .search-control,
@@ -227,13 +228,13 @@ blockquote {
 }
 .meal-item {
   overflow: hidden;
-  margin: 2rem 0;
+  padding: 2rem 0;
 }
 
 .meal-img img {
   width: 100%;
   display: block;
-  padding: 1.5rem;
+  margin: 1.5rem;
 }
 
 .meal-img img:hover {
@@ -326,6 +327,7 @@ blockquote {
 
 .meal-details-content {
   margin: 2rem;
+  max-height: 80vh;
 }
 
 .meal-details-content p:not(.recipe-category) {
@@ -462,4 +464,238 @@ blockquote {
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+/* Letters animation */
+
+.winner-wave {
+  float: left;
+  width: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.winner-wave em {
+  display: inline-block;
+  -webkit-animation: wave-text 3.1s ease-in-out infinite;
+  animation: wave-text 3.1s ease-in-out infinite;
+  font-style: normal;
+  font-style: 9rem;
+  letter-spacing: 0;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.winner-wave em:nth-of-type(1) {
+  -webkit-animation-delay: 40ms;
+  animation-delay: 40ms;
+}
+.winner-wave em:nth-of-type(2) {
+  -webkit-animation-delay: 0.12s;
+  animation-delay: 0.12s;
+}
+.winner-wave em:nth-of-type(3) {
+  -webkit-animation-delay: 0.18s;
+  animation-delay: 0.18s;
+}
+.winner-wave em:nth-of-type(4) {
+  -webkit-animation-delay: 0.26s;
+  animation-delay: 0.26s;
+}
+.winner-wave em:nth-of-type(5) {
+  -webkit-animation-delay: 0.34s;
+  animation-delay: 0.34s;
+}
+.winner-wave em:nth-of-type(6) {
+  -webkit-animation-delay: 0.42s;
+  animation-delay: 0.42s;
+}
+.winner-wave em:nth-of-type(7) {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.winner-wave em:nth-of-type(8) {
+  -webkit-animation-delay: 0.58s;
+  animation-delay: 0.58s;
+}
+.winner-wave em:nth-of-type(9) {
+  -webkit-animation-delay: 0.66s;
+  animation-delay: 0.66s;
+}
+.winner-wave em:nth-of-type(10) {
+  -webkit-animation-delay: 0.74s;
+  animation-delay: 0.74s;
+}
+.winner-wave em:nth-of-type(11) {
+  -webkit-animation-delay: 0.82s;
+  animation-delay: 0.82s;
+}
+.winner-wave em:nth-of-type(12) {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+.winner-wave em:nth-of-type(13) {
+  -webkit-animation-delay: 0.98s;
+  animation-delay: 0.98s;
+}
+.winner-wave em:nth-of-type(14) {
+  -webkit-animation-delay: 1.06s;
+  animation-delay: 1.06s;
+}
+.winner-wave em:nth-of-type(15) {
+  -webkit-animation-delay: 1.14s;
+  animation-delay: 1.14s;
+}
+.winner-wave em:nth-of-type(16) {
+  -webkit-animation-delay: 1.22s;
+  animation-delay: 1.22s;
+}
+.winner-wave em:nth-of-type(17) {
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+.winner-wave em:nth-of-type(18) {
+  -webkit-animation-delay: 1.38s;
+  animation-delay: 1.38s;
+}
+.winner-wave em:nth-of-type(19) {
+  -webkit-animation-delay: 1.46s;
+  animation-delay: 1.46s;
+}
+.winner-wave em:nth-of-type(20) {
+  -webkit-animation-delay: 1.54s;
+  animation-delay: 1.54s;
+}
+.winner-wave em:nth-of-type(21) {
+  -webkit-animation-delay: 1.62s;
+  animation-delay: 1.62s;
+}
+.winner-wave em:nth-of-type(22) {
+  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+}
+.winner-wave em:nth-of-type(23) {
+  -webkit-animation-delay: 1.78s;
+  animation-delay: 1.78s;
+}
+.winner-wave em:nth-of-type(24) {
+  -webkit-animation-delay: 1.86s;
+  animation-delay: 1.86s;
+}
+.winner-wave em:nth-of-type(25) {
+  -webkit-animation-delay: 1.94s;
+  animation-delay: 1.94s;
+}
+.winner-wave em:nth-of-type(26) {
+  -webkit-animation-delay: 2.02s;
+  animation-delay: 2.02s;
+}
+.winner-wave em:nth-of-type(27) {
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+.winner-wave em:nth-of-type(28) {
+  -webkit-animation-delay: 2.18s;
+  animation-delay: 2.18s;
+}
+.winner-wave em:nth-of-type(29) {
+  -webkit-animation-delay: 2.26s;
+  animation-delay: 2.26s;
+}
+.winner-wave em:nth-of-type(30) {
+  -webkit-animation-delay: 2.34s;
+  animation-delay: 2.34s;
+}
+.winner-wave em:nth-of-type(31) {
+  -webkit-animation-delay: 2.42s;
+  animation-delay: 2.42s;
+}
+.winner-wave em:nth-of-type(32) {
+  -webkit-animation-delay: 2.50s;
+  animation-delay: 2.50s;
+}
+.winner-wave em:nth-of-type(33) {
+  -webkit-animation-delay: 2.58s;
+  animation-delay: 2.58s;
+}
+.winner-wave em:nth-of-type(34) {
+  -webkit-animation-delay: 2.66s;
+  animation-delay: 2.66s;
+}
+.winner-wave em:nth-of-type(35) {
+  -webkit-animation-delay: 2.74s;
+  animation-delay: 2.74s;
+}
+.winner-wave em:nth-of-type(36) {
+  -webkit-animation-delay: 2.82s;
+  animation-delay: 2.82s;
+}
+.winner-wave em:nth-of-type(37) {
+  -webkit-animation-delay: 2.9s;
+  animation-delay: 2.9s;
+}
+.winner-wave em:nth-of-type(38) {
+  -webkit-animation-delay: 2.98s;
+  animation-delay: 2.98s;
+}
+.winner-wave em:nth-of-type(39) {
+  -webkit-animation-delay: 3.06s;
+  animation-delay: 3.06s;
+}
+.winner-wave em:nth-of-type(40) {
+  -webkit-animation-delay: 3.14s;
+  animation-delay: 3.14s;
+}
+.winner-wave em:nth-of-type(40) {
+  -webkit-animation-delay: 3.22s;
+  animation-delay: 3.22s;
+}
+.winner-wave em:nth-of-type(41) {
+  -webkit-animation-delay: 3.30s;
+  animation-delay: 3.30s;
+}
+
+
+
+@-webkit-keyframes wave-text {
+  00% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60% {
+    -webkit-transform: translateY(-70px);
+    transform: translateY(-70px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes wave-text {
+  00% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60% {
+    -webkit-transform: translateY(-70px);
+    transform: translateY(-70px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
