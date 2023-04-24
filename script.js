@@ -46,7 +46,11 @@ function getMealList() {
         });
         mealList.classList.remove("notFound");
       } else {
-        html = " ";
+        html += `
+                    <div class = "no-result">
+                        <p>Nothing match your search.</p>
+                    </div>
+                `;
         mealList.classList.add("notFound");
       }
 
@@ -57,7 +61,7 @@ function getMealList() {
 // get recipe of the meal
 function getMealRecipe(e) {
   e.preventDefault();
-  if (e.target.classList.contains("recipe-btn")) {
+  if (e.target.classList.contains("recipe-btn") || "meal-name" || "meal-img") {
     let mealItem = e.target.parentElement.parentElement;
     fetch(
       `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`

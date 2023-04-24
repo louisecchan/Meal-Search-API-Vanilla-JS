@@ -133,8 +133,12 @@ blockquote {
 }
 
 /*  */
-.container {
-  min-height: 100vh;
+.container-1 {
+  height: 100vh;
+}
+
+.container-2 {
+  height: 100vh;
 }
 
 .meal-wrapper {
@@ -223,6 +227,10 @@ blockquote {
   margin-top: 4rem;
 }
 
+.no-result {
+  margin-top: 4rem;
+}
+
 #meal {
   margin: 3.5rem 0;
 }
@@ -232,6 +240,7 @@ blockquote {
 }
 
 .meal-img img {
+  cursor: pointer;
   width: 100%;
   display: block;
   margin: 1.5rem;
@@ -254,6 +263,7 @@ blockquote {
 
 .meal-name {
   padding: 1.5rem 0.5rem;
+  cursor: pointer;
 }
 
 .meal-name h3 {
