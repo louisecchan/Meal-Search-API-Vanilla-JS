@@ -34,11 +34,25 @@
 
       window.addEventListener("scroll", reveal);
     </script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <section class="header">
-      <!-- <img src="./assets/header-1.jpg" alt="" class="header-img" /> -->
+  <body onload="myFunction()" style="margin: 0">
+    <div id="lds-spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <section class="header" id="bb" style="display: none">
       <div class="scroll-btn">
         <a href="#info-slider">
           <figure>
@@ -51,7 +65,7 @@
         </a>
       </div>
     </section>
-    <div class="container-1" id="info-slider">
+    <div class="container-1" id="info-slider" style="display: none">
       <div class="meal-wrapper reveal">
         <div class="meal-search">
           <h2 class="title winner-wave">
@@ -161,6 +175,19 @@
         </div>
       </div>
     </div>
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 2000);
+      }
+
+      function showPage() {
+        document.getElementById("lds-spinner").style.display = "none";
+        document.getElementById("bb").style.display = "block";
+        document.getElementById("info-slider").style.display = "block";
+      }
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
