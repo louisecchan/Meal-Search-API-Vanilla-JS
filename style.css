@@ -163,7 +163,7 @@ blockquote {
   font-size: 3rem;
   font-family: "FreightBig";
   color: var(--appleblossom);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   margin-top: 1rem;
 }
 
@@ -194,7 +194,7 @@ blockquote {
 .meal-search-box {
   display: flex;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 2.5rem;
 }
 
 .search-control,
