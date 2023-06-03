@@ -17,6 +17,20 @@
       media="all"
     />
     <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 2000);
+      }
+
+      function showPage() {
+        document.getElementById("lds-spinner").style.display = "none";
+        document.getElementById("bb").style.display = "block";
+        document.getElementById("info-slider").style.display = "block";
+      }
+    </script>
+    <script src="script.js"></script>
+    <script>
       function reveal() {
         var reveals = document.querySelectorAll(".reveal");
         for (var i = 0; i < reveals.length; i++) {
@@ -175,19 +189,5 @@
         </div>
       </div>
     </div>
-    <script>
-      var myVar;
-
-      function myFunction() {
-        myVar = setTimeout(showPage, 2000);
-      }
-
-      function showPage() {
-        document.getElementById("lds-spinner").style.display = "none";
-        document.getElementById("bb").style.display = "block";
-        document.getElementById("info-slider").style.display = "block";
-      }
-    </script>
-    <script src="script.js"></script>
   </body>
 </html>
